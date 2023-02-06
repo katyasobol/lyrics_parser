@@ -19,9 +19,9 @@ def count_word(url, word):
 
     love_counts = [lyric.text.count(word) for lyric in lyrics]
 
-    #df = pd.DataFrame({'Song': [song_link.text for song_link in song_links], 'Lyrics': [lyric.text for lyric in lyrics], 'Love Count': [love_count for love_count in love_counts]})
+    df = pd.DataFrame({'Song': [song_link.text for song_link in song_links], 'Lyrics': [lyric.text for lyric in lyrics], 'Love Count': [love_count for love_count in love_counts]})
 
-    #df.to_csv('taylor_swift_lyrics.csv', index=False)
-    print(love_counts)
+    df.to_csv('lyrics_parser.csv', index=False)
+
 
 
